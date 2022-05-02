@@ -1,5 +1,6 @@
 package com.example.sunnyweather.ui.weather
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
