@@ -15,6 +15,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.sunnyweather.R
 import com.example.sunnyweather.logic.model.Weather
 import com.example.sunnyweather.logic.model.getSky
+import com.jaeger.library.StatusBarUtil
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -25,6 +26,7 @@ class WeatherActivity : AppCompatActivity() {
     val viewModel by lazy { ViewModelProvider(this).get(WeatherViewModel::class.java) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        StatusBarUtil.setTranslucentForImageView(this,findViewById(R.id.drawerLayout))
         setContentView(R.layout.activity_weather)
         swipeRefresh = findViewById(R.id.swipeRefresh)
         if (viewModel.locationLng.isEmpty()) {

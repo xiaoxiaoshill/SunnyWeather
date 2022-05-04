@@ -3,4 +3,9 @@
     <string name="hint">输入地址</string>
     <string name="dot">|</string>
     <string name="weather">预报</string>
+    <string name="LifeIndex">生活指数</string>
+    <string name="influenza">感冒</string>
+    <string name="garb">穿衣</string>
+    <string name="RealTime">实时紫外线</string>
+    <string name="CarWash">洗车</string>
 </resources>
