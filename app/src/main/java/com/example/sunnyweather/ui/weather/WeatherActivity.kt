@@ -61,7 +61,6 @@ class WeatherActivity : AppCompatActivity() {
         navBtn = findViewById(R.id.navBtn)
         drawerLayout = findViewById(R.id.drawerLayout)
         navBtn.setOnClickListener {
-            println("navBtn")
             drawerLayout.openDrawer(GravityCompat.START)
         }
         drawerLayout.addDrawerListener(object : DrawerLayout.DrawerListener{
